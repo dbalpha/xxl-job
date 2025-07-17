@@ -8,11 +8,10 @@
 	</parent>
 	<artifactId>xxl-job-admin</artifactId>
 	<packaging>jar</packaging>
-
 	<properties>
+		<finalName>${project.artifactId}</finalName>
 		<maven.deploy.skip>false</maven.deploy.skip>
 	</properties>
-
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -80,6 +79,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>${finalName}</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
